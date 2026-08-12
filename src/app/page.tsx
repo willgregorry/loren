@@ -11,7 +11,7 @@ export default function Home() {
     <main className="relative flex min-h-screen flex-col">
       <Navbar />
       
-      {/* Sections */}
+
       <Hero />
       <About />
       <Collection />
