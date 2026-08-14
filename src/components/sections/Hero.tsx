@@ -68,7 +68,10 @@ export default function Hero() {
       </div>
 
 
-      <div className="absolute bottom-0 z-20 h-[65vh] md:h-[85vh] w-auto">
+      <div className="absolute bottom-0 z-20 h-[65vh] w-auto md:h-[85vh]">
+        {/* Floor Shadow */}
+        <div className="absolute bottom-[-1%] left-1/2 z-10 h-[4%] w-[65%] -translate-x-1/2 rounded-[50%] bg-black/60 blur-[15px] md:blur-[25px]" />
+        
         <Image
           ref={imageRef}
           src="/hero/new_fashion.webp"
@@ -76,7 +79,7 @@ export default function Hero() {
           width={800}
           height={1200}
           draggable={false}
-          className="h-full w-auto object-contain object-bottom drop-shadow-2xl select-none"
+          className="relative z-20 h-full w-auto select-none object-contain object-bottom drop-shadow-2xl"
           priority
         />
       </div>
