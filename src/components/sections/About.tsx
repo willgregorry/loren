@@ -93,8 +93,8 @@ export default function About() {
         <div className="about-line mt-6 h-[1px] w-[80%] max-w-[350px] origin-center bg-white/40" />
       </div>
 
-      <div className="mt-16 flex w-full flex-wrap items-center justify-between gap-12 md:gap-12 lg:gap-16">
-        <div className="about-item flex md:h-[257px] md:w-[350px] flex-col items-center text-center gap-8 md:gap-[53px]">
+      <div className="mt-16 flex flex-col md:flex-row w-full items-center justify-center md:justify-between gap-16 md:gap-8 lg:gap-16 max-w-[1200px] mx-auto">
+        <div className="about-item flex w-full md:w-[30%] max-w-[360px] flex-col items-center text-center gap-6 md:gap-[40px] lg:gap-[53px]">
           <div className="about-icon-wrapper flex h-[100px] w-[100px] shrink-0 items-center justify-center rounded-full bg-loren-white text-loren-black shadow-xl">
             <Image
               draggable={false}
@@ -106,16 +106,16 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col items-center gap-1 overflow-hidden py-1">
-            <h3 className="about-item-title font-dmSerifDisplay text-[28px] md:text-[42px] font-normal leading-none tracking-[0.01em] text-loren-white">
+            <h3 className="about-item-title font-dmSerifDisplay text-[24px] md:text-[30px] lg:text-[36px] font-normal leading-none tracking-[0.01em] text-loren-white">
               Timeless Design
             </h3>
-            <p className="about-item-text font-dmSerifText text-[18px] md:text-[28px] italic leading-none tracking-[0.01em] text-loren-white">
+            <p className="about-item-text font-dmSerifText text-[16px] md:text-[20px] lg:text-[24px] italic leading-none tracking-[0.01em] text-loren-white">
               Design Beyond Trends
             </p>
           </div>
         </div>
 
-        <div className="about-item flex md:h-[257px] md:w-[380px] flex-col items-center text-center gap-8 md:gap-[53px]">
+        <div className="about-item flex w-full md:w-[30%] max-w-[380px] flex-col items-center text-center gap-6 md:gap-[40px] lg:gap-[53px]">
           <div className="about-icon-wrapper flex h-[100px] w-[100px] shrink-0 items-center justify-center rounded-full bg-loren-white text-loren-black shadow-xl">
             <Image
               draggable={false}
@@ -127,16 +127,16 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col items-center gap-1 overflow-hidden py-1">
-            <h3 className="about-item-title font-dmSerifDisplay text-[28px] md:text-[42px] font-normal leading-none tracking-[0.01em] text-loren-white">
+            <h3 className="about-item-title font-dmSerifDisplay text-[24px] md:text-[30px] lg:text-[36px] font-normal leading-none tracking-[0.01em] text-loren-white">
               Premium Materials
             </h3>
-            <p className="about-item-text font-dmSerifText text-[18px] md:text-[28px] italic leading-none tracking-[0.01em] text-loren-white">
+            <p className="about-item-text font-dmSerifText text-[16px] md:text-[20px] lg:text-[24px] italic leading-none tracking-[0.01em] text-loren-white">
               Crafted to Endure
             </p>
           </div>
         </div>
 
-        <div className="about-item flex md:h-[257px] md:w-[350px] flex-col items-center text-center gap-8 md:gap-[53px]">
+        <div className="about-item flex w-full md:w-[30%] max-w-[360px] flex-col items-center text-center gap-6 md:gap-[40px] lg:gap-[53px]">
           <div className="about-icon-wrapper flex h-[100px] w-[100px] shrink-0 items-center justify-center rounded-full bg-loren-white text-loren-black shadow-xl">
             <Image
               draggable={false}
@@ -148,10 +148,10 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col items-center gap-1 overflow-hidden py-1">
-            <h3 className="about-item-title font-dmSerifDisplay text-[28px] md:text-[42px] font-normal leading-none tracking-[0.01em] text-loren-white">
+            <h3 className="about-item-title font-dmSerifDisplay text-[24px] md:text-[30px] lg:text-[36px] font-normal leading-none tracking-[0.01em] text-loren-white">
               Quiet Luxury
             </h3>
-            <p className="about-item-text font-dmSerifText text-[18px] md:text-[28px] italic leading-none tracking-[0.01em] text-loren-white">
+            <p className="about-item-text font-dmSerifText text-[16px] md:text-[20px] lg:text-[24px] italic leading-none tracking-[0.01em] text-loren-white">
               Luxury in Every Detail
             </p>
           </div>

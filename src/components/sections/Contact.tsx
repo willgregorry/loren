@@ -69,9 +69,9 @@ export default function Contact() {
           Whether you have a question about our pieces, need assistance, or simply want to learn more about LOREN, we would be glad to hear from you.
         </p>
 
-        <div className="contact-card relative z-30 mt-16 md:mt-20 translate-y-1/2 mx-auto max-w-[800px] w-full bg-white rounded-[8px] shadow-[0px_10px_35px_rgba(8,8,8,0.08)] border border-gray-100 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16 py-6 px-10">
+        <div className="contact-card relative z-30 mt-16 md:mt-20 translate-y-1/2 mx-auto max-w-[800px] w-full bg-white rounded-[8px] shadow-[0px_2px_30px_rgba(20,80,120,0.28)] border border-gray-100 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16 py-6 px-10">
           <a
-            href="mailto:hello@loren.com"
+            href=""
             className="flex items-center gap-3 group transition-colors duration-200"
           >
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 group-hover:bg-red-50 transition-colors duration-200">
@@ -89,7 +89,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://instagram.com/loren.official"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 group transition-colors duration-200"

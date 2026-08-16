@@ -128,10 +128,11 @@ export default function Journal() {
             <div className="journal-image-container relative w-full aspect-square rounded-t-full overflow-hidden shadow-2xl">
               <Image
                 src="/home/journal/journal.png"
+                draggable={false}
                 alt="Journal Cover"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
+                className="select-none object-cover object-center"
                 priority
               />
             </div>
