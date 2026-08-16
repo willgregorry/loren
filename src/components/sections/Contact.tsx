@@ -56,7 +56,7 @@ export default function Contact() {
     <section
       id="contact"
       ref={containerRef}
-      className="relative flex w-full flex-col items-center justify-center bg-loren-white px-6 pt-20 md:pt-32 pb-0 md:px-12 lg:px-[100px] overflow-visible"
+      className="relative flex w-full flex-col items-center justify-center bg-loren-white px-6 pt-20 md:pt-32 pb-0 md:px-12 lg:px-[100px] overflow-visible selection:bg-loren-primary selection:text-loren-white"
     >
       <div className="flex w-full max-w-[1577px] flex-col items-center justify-center text-center">
         <div className="overflow-hidden py-1">

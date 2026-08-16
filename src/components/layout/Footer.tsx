@@ -43,10 +43,10 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="relative w-full bg-loren-primary text-loren-white pt-28 pb-10 px-6 md:px-12 lg:px-[100px] overflow-hidden"
+      className="relative w-full bg-loren-primary text-loren-white pt-28 pb-10 px-6 md:px-12 lg:px-[100px] overflow-hidden selection:bg-loren-white selection:text-loren-primary"
     >
       <div className="grid w-full max-w-[1577px] mx-auto grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
-        {/* Column 1: Brand & Socials */}
+
         <div className="footer-col col-span-2 lg:col-span-1 order-1 lg:order-1 flex flex-col items-start text-left">
           <h2 className="font-dmSerifDisplay text-[31px] font-normal leading-none tracking-[0em] uppercase">
             LOREN
@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Column 2: Explore */}
+
         <div className="footer-col col-span-1 lg:col-span-1 order-2 lg:order-2 flex flex-col items-start text-left">
           <h3 className="font-dmSerifDisplay text-[22px] font-normal leading-none tracking-[0.1em] uppercase">
             EXPLORE
@@ -127,7 +127,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Column 3: Connect */}
+
         <div className="footer-col col-span-1 lg:col-span-1 order-4 lg:order-3 flex flex-col items-start text-left">
           <h3 className="font-dmSerifDisplay text-[22px] font-normal leading-none tracking-[0.1em] uppercase">
             CONNECT
@@ -165,7 +165,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Column 4: Information (Privacy Policy) */}
+
         <div className="footer-col col-span-1 row-span-2 lg:row-span-1 lg:col-span-1 order-3 lg:order-4 flex flex-col items-start text-left">
           <h3 className="font-dmSerifDisplay text-[22px] font-normal leading-none tracking-[0.1em] uppercase">
             INFORMATION
@@ -181,7 +181,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Copyright */}
+
       <div className="footer-bottom w-full max-w-[1577px] mx-auto mt-12">
         <div className="w-full h-[1px] bg-white/20 mb-6" />
         <p className="font-poppins font-light text-[12px] text-white/60 text-center leading-relaxed">

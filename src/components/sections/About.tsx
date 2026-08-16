@@ -84,7 +84,7 @@ export default function About() {
     <section
       id="about"
       ref={containerRef}
-      className="relative flex min-h-[580px] w-full flex-col items-center justify-center bg-loren-primary px-6 py-20 md:px-12 lg:px-[100px]"
+      className="relative flex min-h-[580px] w-full flex-col items-center justify-center bg-loren-primary px-6 py-20 md:px-12 lg:px-[100px] selection:bg-loren-white selection:text-loren-primary"
     >
       <div className="flex w-full flex-col items-center justify-center text-center">
         <h2 className="about-title font-dmSerifDisplay text-[32px] md:text-[56px] font-normal leading-none tracking-[0.1em] text-loren-white uppercase drop-shadow-sm">

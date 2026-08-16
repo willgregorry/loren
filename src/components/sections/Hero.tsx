@@ -47,7 +47,7 @@ export default function Hero() {
     <section
       ref={containerRef}
       id="hero"
-      className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-loren-white from-50% to-loren-primary to-50% px-6 md:px-12 lg:px-[100px]"
+      className="relative flex h-dvh w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-loren-white from-50% to-loren-primary to-50% px-6 md:px-12 lg:px-[100px]"
     >
 
 
@@ -59,10 +59,10 @@ export default function Hero() {
 
 
       <div ref={textRef} className="pointer-events-none relative z-10 mt-[-5vh] flex w-full flex-col justify-center -translate-y-12">
-        <h1 className="text-split text-hero-fluid w-full text-left font-dmSerifDisplay font-normal leading-none tracking-[0.01em]">
+        <h1 className="text-split text-hero-fluid w-full text-left font-dmSerifDisplay font-normal leading-none tracking-[0.01em] selection:bg-loren-primary selection:text-loren-white">
           NEW FASHION
         </h1>
-        <h1 className="text-split text-hero-fluid w-full text-right font-dmSerifDisplay font-normal leading-none tracking-[0.01em]">
+        <h1 className="text-split text-hero-fluid w-full text-right font-dmSerifDisplay font-normal leading-none tracking-[0.01em] selection:bg-loren-white selection:text-loren-primary">
           NEW FASHION
         </h1>
       </div>
@@ -90,7 +90,7 @@ export default function Hero() {
         <div className="pointer-events-auto absolute bottom-8 md:bottom-16 z-30 flex w-full flex-col-reverse items-center justify-between gap-6 px-6 md:flex-row md:items-end md:gap-0 md:px-12 lg:px-[100px]">
 
 
-          <div className="flex max-w-[420px] flex-col items-center text-center md:items-start md:text-left z-40">
+          <div className="flex max-w-[420px] flex-col items-center text-center md:items-start md:text-left z-40 selection:bg-loren-primary selection:text-loren-white">
             <p className="mb-8 hidden md:block font-sans text-sm font-medium italic leading-relaxed text-gray-700">
               Designed for those who appreciate timeless craftsmanship and understated elegance, LOREN
               creates premium outerwear that blends modern sophistication with lasting quality. Every piece is
@@ -102,7 +102,7 @@ export default function Hero() {
           </div>
 
 
-          <div className="text-center md:text-right z-40">
+          <div className="text-center md:text-right z-40 selection:bg-loren-white selection:text-loren-primary">
             <h3 className="font-dmSerifDisplay text-[28px] md:text-[52px] font-normal leading-none tracking-[0.01em] text-loren-white drop-shadow-md">
               CONTEMPORARY OUTWEAR
             </h3>
