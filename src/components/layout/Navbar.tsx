@@ -137,6 +137,18 @@ export default function Navbar() {
     if (!activeLink) return;
 
     const linkRect = activeLink.getBoundingClientRect();
+    
+    // Hide pill if the menu link is hidden (e.g., on mobile layout)
+    if (linkRect.width === 0) {
+      gsap.to(pillRef.current, {
+        opacity: 0,
+        scale: 0.5,
+        duration: 0.4,
+        ease: "power3.inOut"
+      });
+      return;
+    }
+
     const navRect = navRef.current.getBoundingClientRect();
 
     const padX = 20;
@@ -199,12 +211,19 @@ export default function Navbar() {
       if (!activeLink) return;
 
       const linkRect = activeLink.getBoundingClientRect();
+
+      if (linkRect.width === 0) {
+        gsap.set(pillRef.current, { opacity: 0 });
+        return;
+      }
+
       const navRect = navRef.current.getBoundingClientRect();
 
       const padX = 20;
       const padY = 10;
 
       gsap.set(pillRef.current, {
+        opacity: 1,
         left: linkRect.left - navRect.left - padX,
         top: linkRect.top - navRect.top - padY,
         width: linkRect.width + (padX * 2),
@@ -290,7 +309,7 @@ export default function Navbar() {
         >
           <div
             ref={pillRef}
-            className="absolute z-0 bg-loren-primary/20 rounded-full opacity-0 pointer-events-none"
+            className="hidden lg:block absolute z-0 bg-loren-primary/20 rounded-full opacity-0 pointer-events-none"
           />
 
           <div className="lg:hidden flex justify-start z-10">
