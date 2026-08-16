@@ -69,12 +69,11 @@ export default function Hero() {
 
 
       <div className="absolute bottom-0 z-20 h-[65vh] w-auto md:h-[85vh]">
-        {/* Floor Shadow */}
         <div className="absolute bottom-[-1%] left-1/2 z-10 h-[4%] w-[65%] -translate-x-1/2 rounded-[50%] bg-black/60 blur-[15px] md:blur-[25px]" />
-        
+
         <Image
           ref={imageRef}
-          src="/hero/new_fashion.webp"
+          src="/home/hero/new_fashion.webp"
           alt="New Fashion Model"
           width={800}
           height={1200}
@@ -97,7 +96,7 @@ export default function Hero() {
               creates premium outerwear that blends modern sophistication with lasting quality. Every piece is
               thoughtfully crafted to become part of your journey, your identity, and the moments that define you.
             </p>
-            <Button variant="primary" className="px-6 py-4 text-xs shadow-xl md:px-8 md:py-6 md:text-sm">
+            <Button variant="primary" className="px-6 py-4 text-xs md:px-8 md:py-6 md:text-sm">
               VIEW COLLECTIONS
             </Button>
           </div>
