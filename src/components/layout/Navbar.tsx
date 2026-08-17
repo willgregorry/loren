@@ -22,16 +22,19 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const getLeftMenuColor = () => {
+    if (pathname !== "/") return 'text-loren-black';
     if (navTheme === 'white') return 'text-loren-white';
     return 'text-loren-black';
   };
 
   const getRightMenuColor = () => {
+    if (pathname !== "/") return 'text-loren-black';
     if (navTheme === 'black') return 'text-loren-black';
     return 'text-loren-white';
   };
 
   const getLogoColor = () => {
+    if (pathname !== "/") return 'text-loren-black';
     if (navTheme === 'white') return 'text-loren-white';
     if (navTheme === 'black') return 'text-loren-black';
     return 'text-split';
@@ -42,6 +45,9 @@ export default function Navbar() {
     const base = "nav-item block transition-all duration-300 relative z-10 select-none";
     if (isActive) {
       return `${base} text-loren-black font-semibold scale-105`;
+    }
+    if (pathname !== "/") {
+      return `${base} text-loren-black hover:opacity-75`;
     }
     return `${base} ${navTheme === 'white' ? 'text-loren-white hover:opacity-75' : 'text-loren-black hover:opacity-75'}`;
   };
