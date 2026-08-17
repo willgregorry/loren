@@ -1,50 +1,13 @@
 "use client";
 
-import { useRef } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useGSAP } from "@/lib/gsap";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
-  const footerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
-
-  useGSAP(
-    () => {
-      gsap.from(".footer-col", {
-        y: 40,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: footerRef.current,
-          start: "top 90%",
-        },
-      });
-
-      gsap.from(".footer-bottom", {
-        opacity: 0,
-        y: 20,
-        duration: 1,
-        delay: 0.6,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: footerRef.current,
-          start: "top 90%",
-        },
-      });
-    },
-    { scope: footerRef, dependencies: [pathname] }
-  );
 
   return (
     <footer
-      ref={footerRef}
       className="relative w-full bg-loren-primary text-loren-white pt-28 pb-10 px-6 md:px-12 lg:px-[100px] overflow-hidden"
     >
       <div className="grid w-full max-w-[1577px] mx-auto grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
