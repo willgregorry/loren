@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useGSAP } from "@/lib/gsap";
 import { gsap } from "gsap";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -96,9 +97,11 @@ export default function Hero() {
               creates premium outerwear that blends modern sophistication with lasting quality. Every piece is
               thoughtfully crafted to become part of your journey, your identity, and the moments that define you.
             </p>
-            <Button variant="primary" className="px-6 py-4 text-xs md:px-8 md:py-6 md:text-sm">
-              VIEW COLLECTIONS
-            </Button>
+            <Link href="/collection">
+              <Button variant="primary" className="px-6 py-4 text-xs md:px-8 md:py-6 md:text-sm">
+                VIEW COLLECTIONS
+              </Button>
+            </Link>
           </div>
 
 

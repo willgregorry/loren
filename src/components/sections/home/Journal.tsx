@@ -6,6 +6,7 @@ import { useGSAP } from "@/lib/gsap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -117,9 +118,11 @@ export default function Journal() {
             </div>
           </div>
           <div className="journal-btn">
-            <Button variant="secondary" className="px-6 py-4 text-xs md:px-8 md:py-6 md:text-sm">
-              EXPLORE JOURNAL
-            </Button>
+            <Link href="/journal" >
+              <Button variant="secondary" className="px-6 py-4 text-xs md:px-8 md:py-6 md:text-sm">
+                EXPLORE JOURNAL
+              </Button>
+            </Link>
           </div>
         </div>
 

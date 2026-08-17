@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
@@ -74,21 +75,21 @@ export default function Footer() {
             EXPLORE
           </h3>
           <div className="flex flex-col gap-1 mt-4">
-            <a href="#hero" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
+            <Link href="/" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
               HOME
-            </a>
-            <a href="#about" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
+            </Link>
+            <Link href="/about" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
               ABOUT
-            </a>
-            <a href="#collection" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
+            </Link>
+            <Link href="/collection" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
               COLLECTION
-            </a>
-            <a href="#journal" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
+            </Link>
+            <Link href="/journal" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
               JOURNAL
-            </a>
-            <a href="#contact" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
+            </Link>
+            <Link href="/contact" className="font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200 uppercase">
               CONTACT
-            </a>
+            </Link>
           </div>
         </div>
 
