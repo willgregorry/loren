@@ -59,7 +59,7 @@ export default function Quote() {
         />
       </div>
 
-      <div className="absolute inset-0 -z-10 bg-[#000000] opacity-35" />
+      <div className="absolute inset-0 -z-10 bg-loren-black opacity-35" />
 
       <div className="relative z-10 w-full max-w-[1200px] px-6 text-center md:px-12 lg:px-[100px]">
         <h2

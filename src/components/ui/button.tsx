@@ -10,11 +10,11 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/80",
         primary:
-          "rounded-none border-1 border-loren-primary bg-loren-primary font-bold tracking-widest text-loren-white shadow-[6px_6px_0px_#080808] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_#080808] relative z-0 overflow-hidden before:absolute before:inset-y-0 before:-left-[50%] before:w-[200%] before:-z-10 before:-skew-x-[45deg] before:-translate-x-full before:bg-loren-white before:transition-transform before:duration-500 hover:before:translate-x-0 hover:text-loren-primary",
+          "rounded-none border-1 border-loren-primary bg-loren-primary font-bold tracking-widest text-loren-white shadow-[6px_6px_0px_var(--color-loren-black)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_var(--color-loren-black)] relative z-0 overflow-hidden before:absolute before:inset-y-0 before:-left-[50%] before:w-[200%] before:-z-10 before:-skew-x-[45deg] before:-translate-x-full before:bg-loren-white before:transition-transform before:duration-500 hover:before:translate-x-0 hover:text-loren-primary",
         outline:
           "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
         secondary:
-          "rounded-none border-1 border-loren-primary bg-loren-white font-bold tracking-widest text-loren-primary shadow-[6px_6px_0px_#080808] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_#080808] relative z-0 overflow-hidden before:absolute before:inset-y-0 before:-left-[50%] before:w-[200%] before:-z-10 before:-skew-x-[45deg] before:translate-x-full before:bg-loren-primary before:transition-transform before:duration-500 hover:before:translate-x-0 hover:text-loren-white",
+          "rounded-none border-1 border-loren-primary bg-loren-white font-bold tracking-widest text-loren-primary shadow-[6px_6px_0px_var(--color-loren-black)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_var(--color-loren-black)] relative z-0 overflow-hidden before:absolute before:inset-y-0 before:-left-[50%] before:w-[200%] before:-z-10 before:-skew-x-[45deg] before:translate-x-full before:bg-loren-primary before:transition-transform before:duration-500 hover:before:translate-x-0 hover:text-loren-white",
         ghost:
           "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
         destructive:

@@ -9,7 +9,7 @@ const journalSections = [
     desc: "LOREN is shaped by the spaces we move through and the moments we carry with us. Our campaigns explore the connection between contemporary design, quiet confidence, and everyday life.",
     img: "/journal/the_campaign.png",
     textPosition: "right",
-    bgColor: "bg-[#FF3333]",
+    bgColor: "bg-loren-primary",
     textColor: "text-loren-white",
     numColor: "text-loren-white",
   },
@@ -45,7 +45,7 @@ const journalSections = [
     desc: "Inspired by modern architecture, natural textures, and understated forms, the world of LOREN is defined by simplicity with intention. Every element reflects a belief that elegance does not need to be loud.",
     img: "/journal/the_atmosphere.png",
     textPosition: "left",
-    bgColor: "bg-[#FF3333]",
+    bgColor: "bg-loren-primary",
     textColor: "text-loren-white",
     numColor: "text-loren-white",
   },
@@ -77,9 +77,7 @@ export default function JournalSections() {
 
 
             <div
-              className={`relative flex w-full flex-col justify-center px-10 py-12 md:w-1/2 md:px-16 lg:px-20 xl:px-28 ${
-                section.bgColor === "bg-[#FF3333]" ? "bg-loren-primary" : section.bgColor
-              } ${section.textColor}`}
+              className={`relative flex w-full flex-col justify-center px-10 py-12 md:w-1/2 md:px-16 lg:px-20 xl:px-28 ${section.bgColor} ${section.textColor}`}
             >
 
               <span
