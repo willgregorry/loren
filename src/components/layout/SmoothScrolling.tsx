@@ -49,16 +49,13 @@ export default function SmoothScrolling({
   }, []);
 
   useEffect(() => {
-    // Reset scroll immediately on route change
     window.scrollTo(0, 0);
     if (lenisRef.current) {
       lenisRef.current.scrollTo(0, { immediate: true });
     }
     
-    // Clear scroll memory to prevent GSAP from jumping back
     ScrollTrigger.clearScrollMemory("manual");
 
-    // Force a resize and refresh after DOM paints
     const timeout1 = setTimeout(() => {
       lenisRef.current?.resize();
       ScrollTrigger.refresh();
@@ -67,7 +64,7 @@ export default function SmoothScrolling({
     const timeout2 = setTimeout(() => {
       lenisRef.current?.resize();
       ScrollTrigger.refresh();
-    }, 500); // Secondary fallback for slower image loads
+    }, 500);
 
     return () => {
       clearTimeout(timeout1);

@@ -139,7 +139,6 @@ export default function Navbar() {
 
     const linkRect = activeLink.getBoundingClientRect();
 
-    // Hide pill if the menu link is hidden (e.g., on mobile layout)
     if (linkRect.width === 0) {
       gsap.to(pillRef.current, {
         opacity: 0,
@@ -313,7 +312,6 @@ export default function Navbar() {
             className="hidden lg:block absolute z-0 bg-loren-primary/20 rounded-full opacity-0 pointer-events-none"
           />
 
-          {/* Mobile Empty Left Space for Centering */}
           <div className="lg:hidden"></div>
 
           <ul className={`hidden w-full items-center justify-between pr-[3vw] font-poppins text-[16px] font-medium leading-none transition-colors duration-300 lg:flex ${getLeftMenuColor()}`}>

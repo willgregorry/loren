@@ -73,9 +73,8 @@ export default function Collection() {
     <section className="min-h-screen w-full bg-loren-white px-6 pb-24 pt-32 md:px-12 lg:px-24">
       <div className="mx-auto flex max-w-[1577px] flex-col gap-8 lg:flex-row lg:gap-16">
 
-        {/* Mobile Filter Backdrop */}
         <div
-          className={`fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${isFilterOpen ? "opacity-100" : "pointer-events-none opacity-0"}`}
+          className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity duration-300 md:hidden ${isFilterOpen ? "opacity-100" : "pointer-events-none opacity-0"}`}
           onClick={() => setIsFilterOpen(false)}
         />
 
@@ -145,8 +144,7 @@ export default function Collection() {
         </div>
 
         <div className="flex flex-1 flex-col space-y-6">
-          {/* Mobile Search and Filter Toggle */}
-          <div className="flex w-full flex-col gap-3 lg:hidden">
+          <div className="flex w-full items-center justify-between md:hidden gap-4">
             <form
               onSubmit={(e) => {
                 e.preventDefault();

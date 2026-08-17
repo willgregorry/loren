@@ -48,7 +48,7 @@ export default function Hero() {
     return (
         <section
             ref={container}
-            className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-loren-white px-6 pb-12 pt-32 md:px-12 lg:px-24"
+            className="relative flex min-h-dvh w-full items-center justify-center overflow-hidden bg-loren-white px-6 pb-12 pt-32 md:px-12 lg:px-24"
         >
             <div className="grid w-full max-w-7xl grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
                 <div className="flex flex-col space-y-4 lg:space-y-6">
