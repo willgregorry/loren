@@ -22,10 +22,7 @@ export default function Footer() {
           </p>
           
           <div className="flex items-center gap-[10px] mt-4">
-            <a
-              href="https://wa.me/#"
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
               className="w-[50px] h-[50px] rounded-[10px] bg-white flex items-center justify-center hover:scale-105 transition-transform duration-200 shadow-sm"
             >
               <Image
@@ -35,12 +32,9 @@ export default function Footer() {
                 height={24}
                 className="w-[24px] h-[24px] select-none"
               />
-            </a>
+            </div>
 
-            <a
-              href="https://instagram.com/loren.official"
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
               className="w-[50px] h-[50px] rounded-[10px] bg-white flex items-center justify-center hover:scale-105 transition-transform duration-200 shadow-sm"
             >
               <Image
@@ -50,12 +44,9 @@ export default function Footer() {
                 height={24}
                 className="w-[24px] h-[24px] select-none"
               />
-            </a>
+            </div>
 
-            <a
-              href="https://twitter.com/#"
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
               className="w-[50px] h-[50px] rounded-[10px] bg-white flex items-center justify-center hover:scale-105 transition-transform duration-200 shadow-sm"
             >
               <Image
@@ -65,7 +56,7 @@ export default function Footer() {
                 height={24}
                 className="w-[24px] h-[24px] select-none"
               />
-            </a>
+            </div>
           </div>
         </div>
 
@@ -99,10 +90,7 @@ export default function Footer() {
             CONNECT
           </h3>
           <div className="flex flex-col gap-2 mt-4">
-            <a
-              href="https://instagram.com/loren.official"
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
               className="flex items-center gap-2 font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200"
             >
               <Image
@@ -113,10 +101,9 @@ export default function Footer() {
                 className="w-[14px] h-[14px] select-none"
               />
               <span>loren.official</span>
-            </a>
+            </div>
             
-            <a
-              href="mailto:hello@loren.com"
+            <div
               className="flex items-center gap-2 font-poppins font-light text-[12px] leading-[200%] text-white/80 hover:text-white transition-colors duration-200"
             >
               <Image
@@ -127,7 +114,7 @@ export default function Footer() {
                 className="w-[14px] h-[14px] select-none"
               />
               <span>hello@loren.com</span>
-            </a>
+            </div>
           </div>
         </div>
 
