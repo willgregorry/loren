@@ -86,10 +86,10 @@ export default function ContactForm() {
 
 
       <div className="relative mt-24 flex w-full flex-col items-center justify-center text-center">
-        <h2 className="mb-4 font-dmSerifDisplay text-5xl tracking-wide text-loren-black md:text-6xl lg:text-[72px]">
+        <h2 className="mb-4 px-6 font-dmSerifDisplay text-4xl tracking-wide text-loren-black md:text-6xl lg:text-[72px]">
           Stay Connected
         </h2>
-        <p className="mb-16 font-sans text-sm italic text-zinc-600 md:text-base">
+        <p className="mb-16 font-sans text-sm italic text-zinc-600 md:text-base px-6">
           Follow LOREN for new collections, stories, and moments from our world.
         </p>
 
@@ -97,7 +97,7 @@ export default function ContactForm() {
         <div className="relative w-full py-10">
           <div className="absolute bottom-0 left-0 top-1/2 w-full bg-loren-primary"></div>
 
-          <div className="relative z-10 mx-auto flex max-w-[600px] flex-col items-center justify-center gap-8 rounded-xl bg-white px-8 py-6 shadow-[0px_4px_20px_rgba(0,0,0,0.08)] md:flex-row md:gap-16 lg:px-16 lg:py-8">
+          <div className="relative z-10 mx-auto flex w-[400px] md:w-[600px] flex-col items-center justify-center gap-8 rounded-xl bg-white px-8 py-6 shadow-[0px_4px_20px_rgba(0,0,0,0.08)] md:flex-row md:gap-16 lg:px-16 lg:py-8">
             <div className="flex items-center gap-4 text-zinc-500">
               <Mail className="h-6 w-6" strokeWidth={2.5} />
               <span className="font-sans text-lg font-bold tracking-wide">hello@loren.com</span>
