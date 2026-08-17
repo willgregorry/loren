@@ -41,7 +41,7 @@ export default function Collection() {
       setSelectedCategories([]);
       return;
     }
-    
+
     setSelectedCategories((prev) => {
       if (prev.includes(cat)) {
         return prev.filter((c) => c !== cat);
@@ -72,7 +72,7 @@ export default function Collection() {
   return (
     <section className="min-h-screen w-full bg-loren-white px-6 pb-24 pt-32 md:px-12 lg:px-24">
       <div className="mx-auto flex max-w-[1577px] flex-col gap-8 lg:flex-row lg:gap-16">
-        
+
         {/* Mobile Filter Backdrop */}
         <div
           className={`fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${isFilterOpen ? "opacity-100" : "pointer-events-none opacity-0"}`}
@@ -98,10 +98,10 @@ export default function Collection() {
                     onClick={() => handleCategoryToggle(cat)}
                     className="group flex items-center space-x-4 text-left"
                   >
-                    <div className={`flex h-5 w-5 items-center justify-center border-2 transition-colors ${isSelected ? "border-loren-primary" : "border-loren-primary"}`}>
-                      {isSelected && <Check className="h-4 w-4 text-loren-primary" strokeWidth={3} />}
+                    <div className={`flex h-5 w-5 items-center justify-center border-2 transition-colors ${isSelected ? "border-rose-900" : "border-rose-900"}`}>
+                      {isSelected && <Check className="h-4 w-4 text-rose-900" strokeWidth={3} />}
                     </div>
-                    <span className="font-dmSerifDisplay text-lg text-loren-primary transition-opacity group-hover:opacity-75 md:text-xl">
+                    <span className="font-dmSerifDisplay text-lg text-rose-900 transition-opacity group-hover:opacity-75 md:text-xl">
                       {cat}
                     </span>
                   </button>
@@ -147,7 +147,7 @@ export default function Collection() {
         <div className="flex flex-1 flex-col space-y-6">
           {/* Mobile Search and Filter Toggle */}
           <div className="flex w-full flex-col gap-3 lg:hidden">
-            <form 
+            <form
               onSubmit={(e) => {
                 e.preventDefault();
                 if (mobileSearchInput.trim()) {
@@ -159,7 +159,7 @@ export default function Collection() {
               className="flex w-full items-center overflow-hidden rounded-full border border-zinc-200 bg-white px-5 py-3 transition-colors focus-within:border-loren-primary"
             >
               <Search className="mr-3 h-5 w-5 text-zinc-400" />
-              <input 
+              <input
                 type="text"
                 value={mobileSearchInput}
                 onChange={(e) => setMobileSearchInput(e.target.value)}
@@ -167,7 +167,7 @@ export default function Collection() {
                 className="flex-1 bg-transparent font-sans text-base text-loren-black outline-none placeholder:text-zinc-400"
               />
             </form>
-            
+
             <button
               onClick={() => setIsFilterOpen(true)}
               className="flex w-full items-center justify-center gap-2 rounded-full border border-zinc-200 bg-white py-3 font-sans text-sm font-medium text-loren-black shadow-sm transition-colors hover:bg-zinc-50"
@@ -187,7 +187,7 @@ export default function Collection() {
                   "{query}"
                 </h3>
               </div>
-              
+
               <button
                 onClick={() => router.push("/collection")}
                 className="group flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-5 py-2.5 transition-all duration-300 hover:border-loren-primary hover:bg-loren-primary/5 hover:shadow-sm"
@@ -201,7 +201,7 @@ export default function Collection() {
               </button>
             </div>
           )}
-          
+
           {filteredProducts.length > 0 ? (
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
               {filteredProducts.map((product) => (
