@@ -57,9 +57,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${dmSans.variable} ${dmSerifDisplay.variable} ${dmSerifText.variable} ${poppins.variable} scroll-smooth h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${dmSans.variable} ${dmSerifDisplay.variable} ${dmSerifText.variable} ${poppins.variable} scroll-smooth h-full antialiased overflow-x-hidden`}
     >
-      <body className="flex min-h-full flex-col selection:bg-loren-black selection:text-loren-white">
+      <body className="flex min-h-full flex-col selection:bg-loren-black selection:text-loren-white overflow-x-hidden">
         <SmoothScrolling>
           <Navbar />
           {children}
