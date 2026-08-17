@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Serein Overshirt",
+    "price": 1890000,
+    "category": "Overshirts",
+    "image": "/about/hero.png"
+  },
+  {
+    "id": 2,
+    "title": "Aure Coat",
+    "price": 3290000,
+    "category": "Coats",
+    "image": "/about/hero.png"
+  },
+  {
+    "id": 3,
+    "title": "Noir Leather Jacket",
+    "price": 4500000,
+    "category": "Jackets",
+    "image": "/about/hero.png"
+  },
+  {
+    "id": 4,
+    "title": "Classic Trench Coat",
+    "price": 3800000,
+    "category": "Coats",
+    "image": "/about/hero.png"
+  },
+  {
+    "id": 5,
+    "title": "Essential Overshirt",
+    "price": 1500000,
+    "category": "Overshirts",
+    "image": "/about/hero.png"
+  },
+  {
+    "id": 6,
+    "title": "Vintage Biker Jacket",
+    "price": 4200000,
+    "category": "Jackets",
+    "image": "/about/hero.png"
+  }
+]

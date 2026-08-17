@@ -1,8 +1,8 @@
-import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import Collection from "@/components/sections/Collection";
-import Journal from "@/components/sections/Journal";
-import Contact from "@/components/sections/Contact";
+import Hero from "@/components/sections/home/Hero";
+import About from "@/components/sections/home/About";
+import Collection from "@/components/sections/home/Collection";
+import Journal from "@/components/sections/home/Journal";
+import Contact from "@/components/sections/home/Contact";
 
 export default function Home() {
   return (

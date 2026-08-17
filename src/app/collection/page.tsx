@@ -1,5 +1,10 @@
-import Collection from "@/components/sections/Collection";
+import { Suspense } from "react";
+import Collection from "@/components/sections/collection/Collection";
 
 export default function CollectionPage() {
-  return <Collection />;
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-loren-white" />}>
+      <Collection />
+    </Suspense>
+  );
 }

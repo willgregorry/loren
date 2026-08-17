@@ -5,7 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Menu, X, Search, ShoppingBag } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import NavSearch from "./NavSearch";
 
 export default function Navbar() {
   const navRef = useRef<HTMLDivElement>(null);
@@ -95,7 +96,7 @@ export default function Navbar() {
         setActiveSection('hero');
       } else {
         if (pathname === '/about') {
-          setNavTheme('white');
+          setNavTheme('black');
           setActiveSection('about');
         } else if (pathname === '/collection') {
           setNavTheme('black');
@@ -137,7 +138,7 @@ export default function Navbar() {
     if (!activeLink) return;
 
     const linkRect = activeLink.getBoundingClientRect();
-    
+
     // Hide pill if the menu link is hidden (e.g., on mobile layout)
     if (linkRect.width === 0) {
       gsap.to(pillRef.current, {
@@ -177,7 +178,7 @@ export default function Navbar() {
       });
     } else {
       gsap.killTweensOf(pillRef.current);
-      
+
       const currentLeft = Number(gsap.getProperty(pillRef.current, "left"));
       const isMovingRight = finalLeft > currentLeft;
 
@@ -185,22 +186,22 @@ export default function Navbar() {
       tl.to(pillRef.current, {
         width: finalWidth * 0.45,
         height: finalHeight * 0.75,
-        left: isMovingRight 
+        left: isMovingRight
           ? finalLeft - (finalWidth * 0.2)
           : finalLeft + (finalWidth * 0.4),
         duration: 0.2,
         ease: "power2.in",
       })
-      .to(pillRef.current, {
-        left: finalLeft,
-        top: finalTop,
-        width: finalWidth,
-        height: finalHeight,
-        scale: 1,
-        opacity: 1,
-        duration: 0.4,
-        ease: "back.out(1.5)",
-      });
+        .to(pillRef.current, {
+          left: finalLeft,
+          top: finalTop,
+          width: finalWidth,
+          height: finalHeight,
+          scale: 1,
+          opacity: 1,
+          duration: 0.4,
+          ease: "back.out(1.5)",
+        });
     }
   }, [activeSection]);
 
@@ -305,24 +306,16 @@ export default function Navbar() {
       <div className="fixed left-0 right-0 top-5 z-50 flex justify-center px-6 md:top-3 md:px-12 lg:px-[100px]">
         <nav
           ref={navRef}
-          className="relative grid w-full max-w-[1577px] grid-cols-3 items-center rounded-full border border-white/20 bg-white/5 px-6 py-4 opacity-0 shadow-lg backdrop-blur-md md:px-10 md:py-4 selection:bg-loren-primary selection:text-loren-white"
+          className="relative flex justify-between lg:grid w-full max-w-[1577px] lg:grid-cols-3 items-center rounded-full border border-white/20 bg-white/5 px-6 py-4 opacity-0 shadow-lg backdrop-blur-md md:px-10 md:py-4 selection:bg-loren-primary selection:text-loren-white"
         >
           <div
             ref={pillRef}
             className="hidden lg:block absolute z-0 bg-loren-primary/20 rounded-full opacity-0 pointer-events-none"
           />
 
-          <div className="lg:hidden flex justify-start z-10">
-            <button className={`nav-item transition-all duration-300 hover:opacity-70 ${getLeftMenuColor()}`}>
-              <ShoppingBag className="h-7 w-7" strokeWidth={1.5} />
-            </button>
-          </div>
-
           <ul className={`hidden w-full items-center justify-between pr-[3vw] font-poppins text-[16px] font-medium leading-none transition-colors duration-300 lg:flex ${getLeftMenuColor()}`}>
             <li>
-              <button className={`nav-item transition-all duration-300 hover:opacity-70 ${getLeftMenuColor()}`}>
-                <ShoppingBag className="h-6 w-6" strokeWidth={1.5} />
-              </button>
+              <div className="hidden lg:block w-6 h-6"></div>
             </li>
             <li>
               <Link
@@ -344,7 +337,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <div className="flex justify-center z-10">
+          <div className="flex justify-start lg:justify-center z-10">
             <Link
               href="/"
               ref={titleRef}
@@ -374,9 +367,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <button className={`nav-item transition-all duration-300 hover:opacity-70 ${getRightMenuColor()}`}>
-                <Search className="h-6 w-6" strokeWidth={1.5} />
-              </button>
+              <NavSearch colorClass={getRightMenuColor()} />
             </li>
           </ul>
 
