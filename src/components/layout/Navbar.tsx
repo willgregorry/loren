@@ -144,7 +144,7 @@ export default function Navbar() {
       <div className="fixed left-0 right-0 top-5 z-50 flex justify-center px-6 md:top-3 md:px-12 lg:px-[100px]">
         <nav
           ref={navRef}
-          className="grid w-full max-w-[1577px] grid-cols-3 items-center rounded-full border border-white/20 bg-white/5 px-6 py-4 opacity-0 shadow-lg backdrop-blur-md md:px-10 md:py-4"
+          className="grid w-full max-w-[1577px] grid-cols-3 items-center rounded-full border border-white/20 bg-white/5 px-6 py-4 opacity-0 shadow-lg backdrop-blur-md md:px-10 md:py-4 selection:bg-loren-primary selection:text-loren-white"
         >
           {/* Mobile/Tablet Left: Shop Icon */}
           <div className="lg:hidden flex justify-start">

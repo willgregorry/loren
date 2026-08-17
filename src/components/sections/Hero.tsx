@@ -47,7 +47,7 @@ export default function Hero() {
     <section
       ref={containerRef}
       id="hero"
-      className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-loren-white from-50% to-loren-primary to-50% px-6 md:px-12 lg:px-[100px]"
+      className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-r from-loren-white from-50% to-loren-primary to-50% px-6 md:px-12 lg:px-[100px] selection:bg-loren-black selection:text-loren-white"
     >
 
 
@@ -103,10 +103,10 @@ export default function Hero() {
 
 
           <div className="text-center md:text-right z-40">
-            <h3 className="font-dmSerifDisplay text-[28px] md:text-[52px] font-normal leading-none tracking-[0.01em] text-loren-white drop-shadow-md">
+            <h3 className="font-dmSerifDisplay text-[28px] md:text-[52px] font-normal leading-none tracking-[0.01em] text-loren-black md:text-loren-white drop-shadow-md">
               CONTEMPORARY OUTWEAR
             </h3>
-            <p className="mt-2 font-dmSerifText text-[20px] md:text-[40px] font-normal italic leading-none tracking-[0.01em] text-white/90 drop-shadow-md">
+            <p className="mt-2 font-dmSerifText text-[20px] md:text-[40px] font-normal italic leading-none tracking-[0.01em] text-loren-black/90 md:text-white/90 drop-shadow-md">
               The Art of Timeless Outerwear
             </p>
           </div>

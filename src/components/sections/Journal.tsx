@@ -95,7 +95,7 @@ export default function Journal() {
     <section
       id="journal"
       ref={containerRef}
-      className="relative flex min-h-[580px] w-full items-center justify-center bg-loren-primary px-6 py-20 md:px-12 lg:px-[100px] overflow-hidden"
+      className="relative flex min-h-[580px] w-full items-center justify-center bg-loren-primary px-6 py-20 md:px-12 lg:px-[100px] overflow-hidden selection:bg-loren-white selection:text-loren-primary"
     >
       <div className="grid w-full max-w-[1577px] grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left z-10 gap-10 md:gap-12">
