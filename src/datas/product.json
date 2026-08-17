@@ -4,41 +4,41 @@
     "title": "Serein Overshirt",
     "price": 1890000,
     "category": "Overshirts",
-    "image": "/about/hero.png"
+    "image": "/products/serein_overshirt.png"
   },
   {
     "id": 2,
     "title": "Aure Coat",
     "price": 3290000,
     "category": "Coats",
-    "image": "/about/hero.png"
+    "image": "/products/aure_coat.png"
   },
   {
     "id": 3,
-    "title": "Noir Leather Jacket",
-    "price": 4500000,
+    "title": "Livia Tailored Jacket",
+    "price": 2290000,
     "category": "Jackets",
-    "image": "/about/hero.png"
+    "image": "/products/livia_tailored.png"
   },
   {
     "id": 4,
-    "title": "Classic Trench Coat",
-    "price": 3800000,
+    "title": "Arden Long Coat",
+    "price": 3150000,
     "category": "Coats",
-    "image": "/about/hero.png"
+    "image": "/products/arden_long.png"
   },
   {
     "id": 5,
-    "title": "Essential Overshirt",
-    "price": 1500000,
-    "category": "Overshirts",
-    "image": "/about/hero.png"
+    "title": "Celeste Coat",
+    "price": 2750000,
+    "category": "Coats",
+    "image": "/products/celeste_coat.png"
   },
   {
     "id": 6,
-    "title": "Vintage Biker Jacket",
-    "price": 4200000,
-    "category": "Jackets",
-    "image": "/about/hero.png"
+    "title": "Elara Overshirt",
+    "price": 1890000,
+    "category": "Overshirts",
+    "image": "/products/elara_overshirt.png"
   }
 ]

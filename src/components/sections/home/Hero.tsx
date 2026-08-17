@@ -106,10 +106,10 @@ export default function Hero() {
 
 
           <div className="text-center md:text-right z-40">
-            <h3 className="font-dmSerifDisplay text-[28px] md:text-[52px] font-normal leading-none tracking-[0.01em] text-loren-black drop-shadow-md">
+            <h3 className="font-dmSerifDisplay text-[28px] md:text-[52px] font-normal leading-none tracking-[0.01em] text-loren-black md:text-loren-white drop-shadow-md">
               CONTEMPORARY OUTWEAR
             </h3>
-            <p className="mt-2 font-dmSerifText text-[20px] md:text-[40px] font-normal italic leading-none tracking-[0.01em] text-loren-black/90 drop-shadow-md">
+            <p className="mt-2 font-dmSerifText text-[20px] md:text-[40px] font-normal italic leading-none tracking-[0.01em] text-loren-black/90 md:text-loren-white drop-shadow-md">
               The Art of Timeless Outerwear
             </p>
           </div>
