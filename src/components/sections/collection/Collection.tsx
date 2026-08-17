@@ -79,7 +79,7 @@ export default function Collection() {
           onClick={() => setIsFilterOpen(false)}
         />
 
-        <div className={`fixed inset-x-0 bottom-0 z-50 flex h-[85vh] w-full shrink-0 flex-col space-y-8 overflow-y-auto rounded-t-3xl bg-white p-6 shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] lg:static lg:h-auto lg:w-[280px] lg:translate-y-0 lg:overflow-visible lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none ${isFilterOpen ? "translate-y-0" : "translate-y-full lg:translate-y-0"}`}>
+        <div className={`fixed inset-x-0 bottom-0 z-50 flex h-[50vh] w-full shrink-0 flex-col space-y-8 overflow-y-auto rounded-t-3xl bg-white p-6 shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] lg:static lg:h-auto lg:w-[280px] lg:translate-y-0 lg:overflow-visible lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none ${isFilterOpen ? "translate-y-0" : "translate-y-full lg:translate-y-0"}`}>
           <div className="flex items-center justify-between lg:hidden">
             <h2 className="font-dmSerifDisplay text-2xl text-loren-black">Filters</h2>
             <button onClick={() => setIsFilterOpen(false)} className="flex h-8 w-8 items-center justify-center rounded-full bg-zinc-100 text-zinc-600 transition-colors hover:bg-zinc-200">

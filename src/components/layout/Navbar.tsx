@@ -306,12 +306,15 @@ export default function Navbar() {
       <div className="fixed left-0 right-0 top-5 z-50 flex justify-center px-6 md:top-3 md:px-12 lg:px-[100px]">
         <nav
           ref={navRef}
-          className="relative flex justify-between lg:grid w-full max-w-[1577px] lg:grid-cols-3 items-center rounded-full border border-white/20 bg-white/5 px-6 py-4 opacity-0 shadow-lg backdrop-blur-md md:px-10 md:py-4 selection:bg-loren-primary selection:text-loren-white"
+          className="relative grid w-full max-w-[1577px] grid-cols-3 items-center rounded-full border border-white/20 bg-white/5 px-6 py-4 opacity-0 shadow-lg backdrop-blur-md md:px-10 md:py-4 selection:bg-loren-primary selection:text-loren-white"
         >
           <div
             ref={pillRef}
             className="hidden lg:block absolute z-0 bg-loren-primary/20 rounded-full opacity-0 pointer-events-none"
           />
+
+          {/* Mobile Empty Left Space for Centering */}
+          <div className="lg:hidden"></div>
 
           <ul className={`hidden w-full items-center justify-between pr-[3vw] font-poppins text-[16px] font-medium leading-none transition-colors duration-300 lg:flex ${getLeftMenuColor()}`}>
             <li>
@@ -337,7 +340,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <div className="flex justify-start lg:justify-center z-10">
+          <div className="flex justify-center z-10">
             <Link
               href="/"
               ref={titleRef}
