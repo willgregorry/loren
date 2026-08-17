@@ -45,7 +45,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="relative w-full bg-loren-primary text-loren-white pt-28 pb-10 px-6 md:px-12 lg:px-[100px] overflow-hidden selection:bg-loren-white selection:text-loren-primary"
+      className="relative w-full bg-loren-primary text-loren-white pt-28 pb-10 px-6 md:px-12 lg:px-[100px] overflow-hidden"
     >
       <div className="grid w-full max-w-[1577px] mx-auto grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
 

@@ -59,7 +59,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${dmSans.variable} ${dmSerifDisplay.variable} ${dmSerifText.variable} ${poppins.variable} scroll-smooth h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-full flex-col selection:bg-loren-black selection:text-loren-white">
         <SmoothScrolling>
           <Navbar />
           {children}
