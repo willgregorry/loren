@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useGSAP } from "@/lib/gsap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -10,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
   const footerRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   useGSAP(
     () => {
@@ -37,7 +39,7 @@ export default function Footer() {
         },
       });
     },
-    { scope: footerRef }
+    { scope: footerRef, dependencies: [pathname] }
   );
 
   return (
