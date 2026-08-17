@@ -144,7 +144,7 @@ export default function Collection() {
         </div>
 
         <div className="flex flex-1 flex-col space-y-6">
-          <div className="flex w-full items-center justify-between md:hidden gap-4">
+          <div className="flex w-full flex-col gap-3 lg:hidden">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
